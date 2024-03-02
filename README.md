@@ -25,25 +25,6 @@ LuxWatchScrape is ideal for watch enthusiasts, collectors, or businesses looking
 ## Usage
 
 ```python
-from productspage import BuchererProductsPage, ThewatchboxProductsPage, TourneauProductsPage, CrownandcaliberProductsPage, BobswatchesProductsPage, GoldsmithsProductsPage, WatchesofswitzerlandProductsPage, Chrono24ProductsPage, JomashopProductsPage, MayorsProductsPage, BeyerchProductsPage
-from productdetails import BuchererProductDetails, ThewatchboxProductDetails, TourneauProductDetails, CrownandcaliberProductDetails, BobswatchesProductDetails, GoldsmithsProductDetails, WatchesofswitzerlandProductDetails, Chrono24ProductDetails, JomashopProductDetails, MayorsProductDetails, BeyerchProductDetails
-
-url="https://www.thewatchbox.com/watches/shop/all-watches/"
-source = url.split('.')[1]
-if source == "bucherer":
-    products = BuchererProductsPage(url).GetSourceCode()
-# ... rest of the code
-
-Sure, here's the full "Usage" part of the README.md:
-
-```markdown
-## Usage
-
-The `scraper.py` script is the main entry point to the application. It imports the necessary classes from `productspage.py` and `productdetails.py` for each website that the scraper supports.
-
-Here's how to use it:
-
-```python
 from productspage import BuchererProductsPage
 from productdetails import BuchererProductDetails
 
