@@ -1,14 +1,31 @@
-Welcome to LuxWatchScrape, a powerful, versatile, and efficient web scraper that dives into the world of luxury watches. This Python-based project is designed to extract detailed information about luxury watches from a multitude of online retailers, including but not limited to Chrono24, The Watch Box, Tourneau, Crown & Caliber, Bob's Watches, Goldsmiths, Watches of Switzerland, Jomashop, Mayors, and Beyer.
+# LuxWatchScrape: Comprehensive Data Extraction for the Luxury Watch Market
 
-Features
-Multi-Source Data Collection: LuxWatchScrape is not limited to a single source. It navigates through each website, collecting data such as brand, model, price, and other relevant details.
+Welcome to **LuxWatchScrape**, a powerful, versatile, and efficient web scraper that dives into the world of luxury watches. This Python-based project is designed to extract detailed information about luxury watches from a multitude of online retailers, including but not limited to Chrono24, The Watch Box, Tourneau, Crown & Caliber, Bob's Watches, Goldsmiths, Watches of Switzerland, Jomashop, Mayors, and Beyer.
 
-Structured Data Output: The collected data is organized in a structured format, ready for further analysis or storage.
+## Features
 
-Extendable Design: Each retailer has its own class for handling the specific details and structure of that website, making the scraper easily extendable to new sources.
+- **Multi-Source Data Collection:** LuxWatchScrape is not limited to a single source. It navigates through each website, collecting data such as brand, model, price, and other relevant details.
 
-Technology Stack
+- **Structured Data Output:** The collected data is organized in a structured format, ready for further analysis or storage.
+
+- **Extendable Design:** Each retailer has its own class for handling the specific details and structure of that website, making the scraper easily extendable to new sources.
+
+## Technology Stack
+
 LuxWatchScrape is built with Python, utilizing libraries such as BeautifulSoup for HTML parsing and requests for handling HTTP requests. It demonstrates the use of object-oriented programming (OOP) principles to create modular and maintainable code.
 
-Who is it for?
-LuxWatchScrape is ideal for watch enthusiasts, collectors, or businesses looking to gather data for market research, price comparison, or trend analysis across multiple platforms. Dive into the world of luxury watches with LuxWatchScrape!"
+## Who is it for?
+
+LuxWatchScrape is ideal for watch enthusiasts, collectors, or businesses looking to gather data for market research, price comparison, or trend analysis across multiple platforms. Dive into the world of luxury watches with LuxWatchScrape!
+
+## Usage
+
+```python
+from productspage import BuchererProductsPage, ThewatchboxProductsPage, TourneauProductsPage, CrownandcaliberProductsPage, BobswatchesProductsPage, GoldsmithsProductsPage, WatchesofswitzerlandProductsPage, Chrono24ProductsPage, JomashopProductsPage, MayorsProductsPage, BeyerchProductsPage
+from productdetails import BuchererProductDetails, ThewatchboxProductDetails, TourneauProductDetails, CrownandcaliberProductDetails, BobswatchesProductDetails, GoldsmithsProductDetails, WatchesofswitzerlandProductDetails, Chrono24ProductDetails, JomashopProductDetails, MayorsProductDetails, BeyerchProductDetails
+
+url="https://www.thewatchbox.com/watches/shop/all-watches/"
+source = url.split('.')[1]
+if source == "bucherer":
+    products = BuchererProductsPage(url).GetSourceCode()
+# ... rest of the code
