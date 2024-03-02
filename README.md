@@ -16,8 +16,6 @@ Welcome to **LuxWatchScrape**, a powerful, versatile, and efficient web scraper 
 
 ## Technology Stack
 
-## Technology Stack
-
 LuxWatchScrape is built with the following technologies:
 
 - **Python:** The main language used for developing the scraper.
