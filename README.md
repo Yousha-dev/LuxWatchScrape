@@ -16,7 +16,25 @@ Welcome to **LuxWatchScrape**, a powerful, versatile, and efficient web scraper 
 
 ## Technology Stack
 
-LuxWatchScrape is built with Python, utilizing libraries such as BeautifulSoup for HTML parsing and requests for handling HTTP requests. It demonstrates the use of object-oriented programming (OOP) principles to create modular and maintainable code.
+## Technology Stack
+
+LuxWatchScrape is built with the following technologies:
+
+- **Python:** The main language used for developing the scraper.
+
+- **BeautifulSoup:** A Python library used for parsing HTML and extracting the data.
+
+- **Requests:** A Python library used for making HTTP requests to the websites.
+
+- **Selenium:** A web testing library used to automate browser activities.
+
+- **Playwright:** A Python library to automate Chromium, Firefox and WebKit browsers with a single API. Playwright is used in this project for handling dynamic content that can't be accessed with simple HTTP requests.
+
+- **Database (Specify the database you are using):** Used for storing the scraped data for easy access and management.
+
+- **Django REST Framework:** Used for building the API that provides access to the scraped data.
+
+This project demonstrates the use of object-oriented programming (OOP) principles to create modular and maintainable code.
 
 ## Who is it for?
 
